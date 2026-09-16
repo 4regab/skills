@@ -58,7 +58,7 @@ Use these. Do not pitch during the first pass.
 - If I took your current ugly fix away, what breaks this week?
 - Who else gets blamed when this fails?
 
-Write answers into `references` or a `research.md` in their project. Names can be first-name only.
+Write answers into a `research.md` in their project — the same file `references/outreach.md` names. Names can be first-name only. Never write into this skill's own `references` folder.
 
 ## How the agent should behave
 

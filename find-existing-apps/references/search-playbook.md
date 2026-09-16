@@ -56,7 +56,7 @@ Treat as living if any of these hold
 - Public pricing or a working marketing site
 - Active changelog, Discord, or changelog tweet
 
-Treat as dead if the site 404s, last commit is years old with no fork activity, or every review says "abandoned." Dead products still count as prior art — someone already tried this shape.
+Treat as dead if the site 404s, last commit is years old with no fork activity, or every review says "abandoned." Dead products still count — someone already tried this shape.
 
 ## 4. How many is enough
 
@@ -73,4 +73,4 @@ Stop at 8–12 solid hits or 6 searches that return the same 3 names. Repeating 
 
 ## 6. Thin-market rule
 
-If you cannot find 3 living products and 1 repo after a real search, say THIN MARKET. That is rare. Double-check you searched the job, not the user's invented brand.
+If you cannot find 3 living products and 1 repo after a real search, note "no close match found in scope." That is rare. Double-check you searched the job, not the user's invented brand. This is a note, not a verdict — still pick VALIDATE or BUILD.

@@ -28,7 +28,7 @@ Use supplied context. If a missing answer changes the recommendation, ask at mos
 
 ## Research before application code
 
-Follow `find-existing-apps` and `references/search-playbook.md` in that skill. Also search built-in OS, browser, spreadsheet, and platform features. A Settings toggle that already does the job beats a new app.
+Follow `find-existing-apps` and its `find-existing-apps/references/search-playbook.md`. Also search built-in OS, browser, spreadsheet, and platform features. A Settings toggle that already does the job beats a new app.
 
 Rules taken from hard-won duplicate builds
 
@@ -65,12 +65,14 @@ Do not require a globally new category.
 
 ## Decide and pause
 
-| Decision | When it fits | Next action |
+| Verdict | When it fits | Next action |
 |---|---|---|
-| Use existing | A verified option meets the actual need | Link the best fit and the setup steps |
-| Extend or contribute | A suitable base covers most of the job and allows the intended reuse | Name the missing capability and the PR / plugin / fork path |
-| Validate first | A possible gap exists but pain, switching benefit, or demand is thin | Smallest test, measurable success, stop condition. Then `talk-to-real-people` |
-| Build a focused solution | Evidence supports an unmet constraint and reuse is insufficient | Scope only the workflow that proves the benefit. Then `why-this-is-different` |
+| USE | A verified option meets the actual need | Link the best fit and the setup steps |
+| EXTEND | A suitable base covers most of the job and allows the intended reuse | Name the missing capability and the PR / plugin / fork path |
+| VALIDATE | A possible gap exists but pain, switching benefit, or demand is thin | Smallest test, measurable success, stop condition. Then `talk-to-real-people` |
+| BUILD | Evidence supports an unmet constraint and reuse is insufficient | Scope only the workflow that proves the benefit. Then `why-this-is-different` |
+
+The four verdict names are fixed across the pack. `find-existing-apps` defines them. Do not rename them per report.
 
 Default when existing options meet the need and no useful difference is supported — **pause and redirect**. Present the comparison before writing app code. Offer the short choice — use the best existing option, extend around a specific gap, or knowingly build anyway.
 

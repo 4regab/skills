@@ -23,7 +23,7 @@ Rules
 - Incumbent is a real name from the scan.
 - Constraint is structural (workflow, regulation, language, offline, price, distribution, data they already have) — not "better UX" or "AI."
 
-If they cannot fill it, they do not have a wedge. Say that. Then offer Use or Fork again.
+If they cannot fill it, they do not have a wedge. Say that. Then offer USE or EXTEND again.
 
 ## Fake wedges (reject these)
 

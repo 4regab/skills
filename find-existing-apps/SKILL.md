@@ -7,7 +7,7 @@ description: Search the web, GitHub, Product Hunt, app stores, and indie lists f
 
 Stop a blank-repo start when the thing already exists. Run this before scaffolding, generating UI, or writing a launch post.
 
-This skill does not refuse to build. It forces a search, names the incumbents, and offers use → extend/fork → validate → wedge in that order. If the user still wants to build after the brief, proceed. Do not silently scaffold a duplicate while asking.
+This skill does not refuse to build. It forces a search, names the incumbents, and offers USE → EXTEND → VALIDATE → BUILD in that order. If the user still wants to build after the brief, proceed. Do not silently scaffold a duplicate while asking.
 
 ## When to fire
 
@@ -28,7 +28,7 @@ Run in this order. Do not skip to code.
 
 1. `overused-app-ideas` — category heat check
 2. This scan — find living products and repos
-3. Disposition — Use, then Contribute/Fork, then Wedge
+3. Verdict — USE, then EXTEND, then VALIDATE, then BUILD
 4. `why-this-is-different` — one-line reason this is not a clone
 5. `talk-to-real-people` — conversations or a paid signal before features pile on
 
@@ -57,23 +57,23 @@ If search tools fail, say the gate is incomplete. Do not invent a clean unique m
 
 Do not send private project details or secrets to search. Do not install, fork, deploy, or message maintainers just because they appeared in results. A public repo is not permission to ship its code. Flag unclear licenses.
 
-## Disposition order
+## The four verdicts
 
-Present options in this order. Do not invert it.
+Present options in this order. Do not invert it. These four names are used across the whole pack — do not rename them per report.
 
-### 1. Use it
+### 1. USE — use what exists
 
 If a shipped product already solves the stated job, say so in one blunt sentence. Link it. Recommend they install, trial, or pay before writing code.
 
-### 2. Contribute or fork
+### 2. EXTEND — contribute, plug in, or fork
 
 If a healthy open-source repo covers most of the job, link the repo, note license, last commit, and 2–3 open issues or missing pieces that match the user's itch. Recommend a PR, plugin, or fork with one change — not a greenfield rewrite.
 
-### 3. Validate first
+### 3. VALIDATE — talk before you build
 
 A possible gap exists but pain, switching cost, or demand is thin. Propose the smallest test with a success metric and a stop condition. Hand off to `talk-to-real-people`. Do not invent interviews or traction.
 
-### 4. Build a wedge
+### 4. BUILD — build the wedge
 
 Only after 1–3. The user must name a specific user and a constraint the incumbent ignores. Hand off to `why-this-is-different`.
 
@@ -82,7 +82,7 @@ Only after 1–3. The user must name a specific user and a constraint the incumb
 Lead with the verdict, not the search log.
 
 ```
-Prior-art verdict: USE / EXTEND / VALIDATE / WEDGE / THIN MARKET
+Verdict: USE / EXTEND / VALIDATE / BUILD
 
 Closest products
 - Name — what it does — why it already covers this — url
@@ -95,6 +95,8 @@ If you still build
 - What you should not rebuild
 - Next gate: why-this-is-different, then talk-to-real-people
 ```
+
+If the scan turns up no close match, that is not a fifth verdict. Say "no close match found in scope" as a note, then still pick VALIDATE or BUILD.
 
 Tone: direct, specific, no TED-talk. Name products. Do not say the market is crowded without listing names.
 

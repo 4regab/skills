@@ -37,5 +37,5 @@ Reject these as the "because" clause. They describe taste, stack, or marketing â
 
 Ask one question: "If `{incumbent}` shipped your twist on Friday, would your user switch?"
 
-- If yes, there is no wedge. Use or fork.
+- If yes, there is no wedge. USE or EXTEND.
 - If no, the reason they would not switch is the real constraint. Put that in the sentence.

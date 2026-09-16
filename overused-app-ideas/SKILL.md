@@ -20,7 +20,7 @@ Do not shame the maker. Name the category and the usual failure, then keep movin
 
 ## Heat levels
 
-- **Hot grave** — daily on SideProject / SaaS. Default verdict is USE or FORK. Building requires a brutal wedge plus named users.
+- **Hot grave** — daily on SideProject / SaaS. Default verdict is USE or EXTEND. Building requires a brutal wedge plus named users.
 - **Warm grave** — crowded but a narrow scene can still live. Scan hard. Demand a scene, not a persona.
 - **Learning-only** — fine as a tutorial. Label the repo as a clone. Do not write launch copy.
 
