@@ -1,19 +1,38 @@
-# Research Before Build — skill pack
+# Skills to Stop Making Clones
 
-Five agent skills. Trigger on “I want to make an app that does X” and similar.
+Five agent skills that activate whenever you say **"I want to make an app that does X"** or start a new project idea.
 
-## Skills
+Instead of writing code right away, this pack checks whether the project is worth building, finds existing tools, and ensures you have a unique angle.
 
-| Folder | Job |
-|---|---|
-| `research-before-build` | Orchestrator. Pause, compare, decide. ChatGPT `openai.yaml` + icon included. |
-| `cliche-graveyard` | Heat-check over-copied categories. Not a ban list. |
-| `prior-art-scan` | Live search of apps, built-ins, GitHub. |
-| `uniqueness-wedge` | One falsifiable reason this is not a clone. |
-| `talk-to-users` | Conversations or a paid signal before extra features. |
+---
 
-Pipeline: graveyard → scan → use / extend / validate / wedge → users.
+## Install
 
-Default: pause and redirect when an existing tool already does the job. Informed override allowed. Learning and personal tools skip the revenue bar.
+Run this command in your terminal to install the entire pack:
 
-- Decision brief + reddit-lessons from the SideProject thread
+```bash
+npx skills add 4regab/skills
+
+```
+## Included Skills
+
+| Skill | Folder | What It Does |
+| --- | --- | --- |
+| **Look Before Building** | `look-before-building` | Orchestrator. Coordinates the pipeline, compares options, and makes the go/no-go call. |
+| **Overused App Ideas** | `overused-app-ideas` | Quick heat-check on over-copied startup and side-project categories. |
+| **Find Existing Apps** | `find-existing-apps` | Live search across existing apps, GitHub repositories, and built-in tools. |
+| **Why This Is Different** | `why-this-is-different` | Identifies one clear, falsifiable reason why this product is not just a clone. |
+| **Talk To Real People** | `talk-to-real-people` | Sets up real customer conversations or demands a paid signal before writing extra features. |
+
+
+## How It Works
+
+The skills run in a clear pipeline:
+
+**Graveyard** → **Scan** → **Use / Extend / Validate / Wedge** → **Users**
+
+By default, the agent pauses and redirects you if an existing product already does the job well. You can always override this, and learning or personal tools skip the validation bar.
+
+
+
+
