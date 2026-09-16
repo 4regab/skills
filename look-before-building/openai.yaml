@@ -1,0 +1,14 @@
+interface:
+  display_name: Look Before Building
+  short_description: Find existing tools and prove a useful reason to build
+  default_prompt: Use $look-before-building to check my app idea against existing
+    apps and GitHub projects before coding.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
