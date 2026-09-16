@@ -1,6 +1,6 @@
 ---
 name: why-this-is-different
-description: Force a one-line wedge before treating an idea as original. Use after finding existing apps when the user still wants to build, or when they claim a twist, niche, or AI-powered version of an existing app. Reject fake differentiation. Pair with find-existing-apps, overused-app-ideas, and talk-to-real-people.
+description: Force a one-line wedge before treating an idea as original. Use after finding existing apps when the user still wants to build, or when they claim a twist, niche, or AI-powered version of an existing app. Reject fake differentiation. Pair with find-existing-apps, overused-app-ideas, and proof-of-demand.
 ---
 
 # Why This Is Different
@@ -63,10 +63,12 @@ Print the filled sentence. Then three bullets
 
 - Why this is not `{top incumbent}`
 - What we will refuse to build (features the incumbent already owns)
-- What `talk-to-real-people` must confirm before more surface area
+- What `proof-of-demand` must confirm before more surface area
 
 If the sentence is weak, do not rewrite it into something impressive. Show the hole and ask them to patch one slot.
 
 ## Strong recommend
+
+Tone and timing come from the one hard round in `look-before-building`. Push back once, hard, then build.
 
 If they insist on building with a weak wedge, build the smallest proof of that sentence only. Do not scaffold the full suite. Name the clone risk in the README.

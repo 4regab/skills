@@ -14,6 +14,6 @@ Reviewed the post and the 41 comment entries exposed by the standard page, inclu
 | Excessive promotion | Require honest, supported claims. |
 | Learning and personal projects | Preserve noncommercial purposes. |
 | Offline or workflow-shaped counterexamples | Recognize useful differences. |
-| Shaming and gatekeeping | Respect informed choices. |
+| Shaming and gatekeeping | Blunt about the idea, never about the person. Build it anyway if they still want it. |
 
 Treat the thread as qualitative input, not market validation. Avoid category bans and demands for more features. User-selected default — pause and redirect when existing tools meet the need, with an informed override.

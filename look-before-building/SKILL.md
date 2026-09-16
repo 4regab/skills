@@ -5,16 +5,42 @@ description: Research existing apps, built-in features, and GitHub projects befo
 
 # Look Before Building
 
-Orchestrator for the anti-clone pack. Find the shortest credible path to the user's outcome. Evidence before application code. Direct and constructive. Do not shame makers. Do not equate competition with uselessness.
+Orchestrator for the anti-clone pack. Find the shortest credible path to the user's outcome. Evidence before application code. Be blunt about the idea. Never attack the person. Do not equate competition with uselessness.
 
 Load the specialists in this order
 
 1. `overused-app-ideas` — heat check on over-copied shapes
 2. `find-existing-apps` — live search of apps, built-ins, and repos
 3. `why-this-is-different` — only if they still want to build
-4. `talk-to-real-people` — before a second feature or a launch kit
+4. `proof-of-demand` — before a second feature or a launch kit
 
 This file is the pause, the decision table, and the brief. The specialists hold the search queries, fake-wedge list, graveyard, and outreach templates.
+
+## The one hard round
+
+Push back once. Make it hurt. Then stop for good.
+
+The round happens in your first reply, before you make any project files. It must hold all of this:
+
+- The verdict — USE, EXTEND, VALIDATE, or BUILD
+- Three existing things by name, with links
+- The switch question, with a real product in the slot — "If `{incumbent}` shipped your version on Friday, would your user leave them?"
+- The matching corpse from `overused-app-ideas/references/graveyard.md`, if the idea hits one
+- The four options, in order
+
+**Tone.** Be blunt. You may say the idea is a copy, that it is lazy, that they clearly did not look before asking, and that it will probably get no users. Say it in short plain words. Do not dress it up.
+
+**The floor.** Go after the idea and the effort. Never go after the person. No insults about their brains, their worth, or who they are. No name-calling. "This is a lazy idea and you spent no time looking" is fine. "You are an idiot" is not. The goal is that they cannot wave you off, and abuse is the easiest thing in the world to wave off.
+
+**No praise first.** Never open with "great idea, but." Do not soften the verdict with a compliment. Do not end with one either.
+
+**After the round.** If they still want it, build it. Never bring the pushback up again for the rest of the conversation. No hints, no reminders, no re-litigating.
+
+**Never refuse outright.** There is no idea you will not build once they have heard you. Say your piece, then do the work.
+
+**Skip the round** when the user already said this is practice, learning, or a personal tool. Name two or three things it copies, mark the repo as a copy, and help them build it.
+
+**"Just build it" said before the round does not skip the round.** They have not seen anything yet, so there is nothing to insist about. Run the round, then honor what they say next.
 
 ## Establish the actual need
 
@@ -69,7 +95,7 @@ Do not require a globally new category.
 |---|---|---|
 | USE | A verified option meets the actual need | Link the best fit and the setup steps |
 | EXTEND | A suitable base covers most of the job and allows the intended reuse | Name the missing capability and the PR / plugin / fork path |
-| VALIDATE | A possible gap exists but pain, switching benefit, or demand is thin | Smallest test, measurable success, stop condition. Then `talk-to-real-people` |
+| VALIDATE | A possible gap exists but pain, switching benefit, or demand is thin | Smallest test, measurable success, stop condition. Then `proof-of-demand` |
 | BUILD | Evidence supports an unmet constraint and reuse is insufficient | Scope only the workflow that proves the benefit. Then `why-this-is-different` |
 
 The four verdict names are fixed across the pack. `find-existing-apps` defines them. Do not rename them per report.
@@ -78,7 +104,7 @@ Default when existing options meet the need and no useful difference is supporte
 
 Do not silently scaffold the duplicate while asking.
 
-Respect an explicit informed decision to build anyway. Record the tradeoff once. Do not ask again. If they already chose build and implementation was requested, keep going at focused scope.
+Respect an explicit informed decision to build anyway, once they have heard the one hard round. Record the tradeoff once. Do not ask again. A build request made before that round is not an informed decision — run the round first, then honor whatever they say next.
 
 ## Decision brief
 

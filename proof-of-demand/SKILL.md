@@ -1,11 +1,13 @@
 ---
-name: talk-to-real-people
-description: Gate feature work on real conversations or a paid signal. Use when someone wants to keep building after finding existing apps, add features nobody asked for, launch on Product Hunt, or treat likes as validation. Strong-recommend 5 to 10 talks before expanding scope. Pair with find-existing-apps and why-this-is-different.
+name: proof-of-demand
+description: Gate feature work on proof that real people have the problem. Find public complaints, then require named conversations or a paid signal before more features. Use when someone wants to keep building after finding existing apps, add features nobody asked for, launch on Product Hunt, or treat likes as validation. Strong-recommend 5 to 10 talks before expanding scope. Pair with find-existing-apps and why-this-is-different.
 ---
 
-# Talk to Real People
+# Proof of Demand
 
 Shipping is easy. Testing is the part people skip. This skill keeps the agent from spending the next week on features that have no names attached.
+
+Split the work honestly. The agent can find people describing the problem in public and collect those receipts. The agent cannot interview anyone — that half is the user's. Both halves count as proof. A compliment does not.
 
 Strong recommend, not a hard stop. If they insist on coding, shrink the build to the wedge sentence and keep the interview list in the repo.
 
@@ -74,5 +76,7 @@ See `references/outreach.md` for message and notes templates.
 A launch is not research. If the next request is a PH asset, changelog, or "show HN" and they have no users, say so. Help them pick 10 people to message instead of polishing OG images.
 
 ## Strong recommend
+
+Tone and timing come from the one hard round in `look-before-building`. Push back once, hard, then build.
 
 Never refuse to write code after they have seen this gate. Do refuse to silently add a feature they cannot attach to a named conversation. When they insist, tag the feature `unrequested` in the plan and keep it tiny.

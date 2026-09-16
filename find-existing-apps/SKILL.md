@@ -1,6 +1,6 @@
 ---
 name: find-existing-apps
-description: Search the web, GitHub, Product Hunt, app stores, and indie lists for existing apps and repos before writing code or a pitch. Use when someone says build an app, side project, SaaS, Chrome extension, AI wrapper, I have an idea, or clone of X. Strong-recommend existing products first, then forks, then a wedge. Pair with overused-app-ideas, why-this-is-different, and talk-to-real-people.
+description: Search the web, GitHub, Product Hunt, app stores, and indie lists for existing apps and repos before writing code or a pitch. Use when someone says build an app, side project, SaaS, Chrome extension, AI wrapper, I have an idea, or clone of X. Strong-recommend existing products first, then forks, then a wedge. Pair with overused-app-ideas, why-this-is-different, and proof-of-demand.
 ---
 
 # Find Existing Apps
@@ -30,7 +30,7 @@ Run in this order. Do not skip to code.
 2. This scan — find living products and repos
 3. Verdict — USE, then EXTEND, then VALIDATE, then BUILD
 4. `why-this-is-different` — one-line reason this is not a clone
-5. `talk-to-real-people` — conversations or a paid signal before features pile on
+5. `proof-of-demand` — conversations or a paid signal before features pile on
 
 ## Search recipe
 
@@ -71,7 +71,7 @@ If a healthy open-source repo covers most of the job, link the repo, note licens
 
 ### 3. VALIDATE — talk before you build
 
-A possible gap exists but pain, switching cost, or demand is thin. Propose the smallest test with a success metric and a stop condition. Hand off to `talk-to-real-people`. Do not invent interviews or traction.
+A possible gap exists but pain, switching cost, or demand is thin. Propose the smallest test with a success metric and a stop condition. Hand off to `proof-of-demand`. Do not invent interviews or traction.
 
 ### 4. BUILD — build the wedge
 
@@ -93,7 +93,7 @@ Closest repos
 If you still build
 - The only honest wedge I can see
 - What you should not rebuild
-- Next gate: why-this-is-different, then talk-to-real-people
+- Next gate: why-this-is-different, then proof-of-demand
 ```
 
 If the scan turns up no close match, that is not a fifth verdict. Say "no close match found in scope" as a note, then still pick VALIDATE or BUILD.
@@ -101,6 +101,8 @@ If the scan turns up no close match, that is not a fifth verdict. Say "no close 
 Tone: direct, specific, no TED-talk. Name products. Do not say the market is crowded without listing names.
 
 ## Strong recommend, not a hard stop
+
+Tone and timing come from the one hard round in `look-before-building`. Push back once, hard, then build.
 
 - Always run the scan and print the report before creating project files.
 - If the user insists after seeing incumbents, build. Do not nag every later turn.
@@ -112,4 +114,4 @@ Tone: direct, specific, no TED-talk. Name products. Do not say the market is cro
 - Do not recommend a rewrite because the incumbent's UI is ugly.
 - Do not treat AI-powered as differentiation.
 - Do not hallucinate Product Hunt products. If a search misses, say search was thin.
-- Do not start the app in the same message as the first scan unless the user already insisted.
+- Do not start the app in the same message as the first scan. "Just build it" said before the scan does not count, because they have not seen the results yet. Run the scan, then honor what they say next.

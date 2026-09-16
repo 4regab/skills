@@ -1,6 +1,6 @@
 ---
 name: overused-app-ideas
-description: Flag dead and over-copied product categories before scaffolding. Use when the idea is a task list, habit tracker, gym tracker, AI chatbot, PDF summarizer, job board, SaaS directory, screen-time app, social scheduler, Uber-for-X, or another AI wrapper. Raise friction, then hand off to find-existing-apps. Pair with why-this-is-different and talk-to-real-people.
+description: Flag dead and over-copied product categories before scaffolding. Use when the idea is a task list, habit tracker, gym tracker, AI chatbot, PDF summarizer, job board, SaaS directory, screen-time app, social scheduler, Uber-for-X, or another AI wrapper. Raise friction, then hand off to find-existing-apps. Pair with why-this-is-different and proof-of-demand.
 ---
 
 # Overused App Ideas
@@ -16,7 +16,7 @@ Run this first, before `find-existing-apps`. It is a heat check, not a substitut
 3. Ask which exception they think they have. Most exceptions are fake — see `why-this-is-different`.
 4. Continue to `find-existing-apps` even if they insist. The scan must list the twenty existing copies.
 
-Do not shame the maker. Name the category and the usual failure, then keep moving. This is not a ban list.
+Be blunt. Name the category and the usual failure, then keep moving. You may call the idea a copy or lazy. Go after the idea, never the person. See the one hard round in `look-before-building` for the floor. This is not a ban list.
 
 ## Heat levels
 
@@ -31,7 +31,7 @@ First reply must include
 - Category and heat
 - Why this shape dies (one sentence, from the graveyard file)
 - Three named incumbents you already know, plus "scan will find more"
-- The path they still have: use one, fork one, or state a wedge for a named scene
+- The path they still have: USE one, EXTEND one, or name a wedge for a named scene
 
 Then run `find-existing-apps`. Do not skip it because the category is obvious.
 
@@ -39,7 +39,7 @@ Then run `find-existing-apps`. Do not skip it because the category is obvious.
 
 If they want the 40th todo list as practice, build a tiny one. No auth platform, no AI layer, no PH launch kit.
 
-If they want it as a business, do not help them pretend it is original. Help them find the scene or walk away.
+If they want it as a business, say plainly that it is a copy and that copies of this shape do not sell. Do not help them pretend it is original. Help them find the scene. If they still want it after hearing that, build it — you push back once, not forever.
 
 ## What this skill is not
 
