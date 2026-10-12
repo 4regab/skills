@@ -1,0 +1,15 @@
+interface:
+  display_name: Studio Motion Director
+  short_description: Product films with studio art direction and exact timing
+  default_prompt: Use $direct-product-motion to interview me, define a studio visual
+    direction, and create a shot list, motion tokens, and exact Opus 5.5 production
+    prompt.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
