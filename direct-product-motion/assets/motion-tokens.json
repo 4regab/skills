@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "provenance": "Tunable engineering presets for product motion.",
+  "time": {
+    "baseFps": 60,
+    "anticipationFrames": [
+      3,
+      6
+    ],
+    "entranceFrames": 24,
+    "focusFrames": 18,
+    "cameraFrames": 48,
+    "staggerFrames": [
+      3,
+      5
+    ],
+    "headlineHoldFrames": 90,
+    "minReadableSeconds": 1.5,
+    "readingWordsPerSecond": 3,
+    "readingBufferSeconds": 0.35
+  },
+  "easing": {
+    "quintLike": [
+      0.22,
+      1,
+      0.36,
+      1
+    ],
+    "expoLike": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "camera": [
+      0.65,
+      0,
+      0.35,
+      1
+    ],
+    "exit": [
+      0.64,
+      0,
+      0.78,
+      0
+    ]
+  },
+  "springs": {
+    "tactile": {
+      "zeta": 0.65,
+      "naturalFrequencyHz": 4,
+      "mass": 1,
+      "stiffness": 631.654682,
+      "damping": 32.672564,
+      "overshootPercent": 6.81
+    },
+    "hero": {
+      "zeta": 0.7,
+      "naturalFrequencyHz": 2.8,
+      "mass": 1,
+      "stiffness": 309.510794,
+      "damping": 24.630086,
+      "overshootPercent": 4.6
+    },
+    "accent": {
+      "zeta": 0.55,
+      "naturalFrequencyHz": 3.5,
+      "mass": 1,
+      "stiffness": 483.610616,
+      "damping": 24.190263,
+      "overshootPercent": 12.63
+    },
+    "calm": {
+      "zeta": 0.75,
+      "naturalFrequencyHz": 3,
+      "mass": 1,
+      "stiffness": 355.305758,
+      "damping": 28.274334,
+      "overshootPercent": 2.84
+    }
+  },
+  "surface": {
+    "radiusPx": 24,
+    "borderPx": 1,
+    "glassOpacity": 0.84,
+    "edgeWhiteAlpha": 0.42,
+    "insetHighlightPx": 1,
+    "shadow": {
+      "x": 0,
+      "y": 16,
+      "blur": 44,
+      "alpha": 0.14
+    },
+    "ambientGlow": {
+      "radiusPx": 360,
+      "alpha": 0.12
+    },
+    "bevelWorld": 0.012
+  },
+  "space": {
+    "cardWidthWorld": 5.4,
+    "cardHeightWorld": 3.0,
+    "depthGapWorld": 0.12,
+    "tiltDegrees": [
+      6,
+      12
+    ],
+    "maxTiltDuringReadingDegrees": 4,
+    "orthoViewHeight": 6.5,
+    "cameraZoomRange": [
+      1,
+      1.08
+    ]
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "offsetFrames": 1,
+    "syncAnchor": "onset",
+    "integratedLufsTarget": -14,
+    "decodedTruePeakMaxDbTP": -1,
+    "hitOverBedDb": [
+      3,
+      6
+    ],
+    "attackMs": 0.5,
+    "clickDecayMs": 18,
+    "popDecayMs": 65,
+    "swellMs": 350
+  },
+  "palettes": {
+    "clear-workflow": {
+      "bg": "#F2F7FC",
+      "surface": "#FFFFFF",
+      "ink": "#14273E",
+      "accent": "#0878E9"
+    },
+    "focused-glass": {
+      "bg": "#14090D",
+      "surface": "#302026",
+      "ink": "#FFF8F8",
+      "accent": "#E94256"
+    },
+    "calm-research": {
+      "bg": "#F5F5F0",
+      "surface": "#FFFFFF",
+      "ink": "#152925",
+      "accent": "#357A70"
+    },
+    "expressive-music": {
+      "bg": "#FFF3CF",
+      "surface": "#FFFFFF",
+      "ink": "#34352B",
+      "accent": "#11BDA2"
+    },
+    "corporate-spatial": {
+      "bg": "#E6F0F3",
+      "surface": "#FFFFFF",
+      "ink": "#142C52",
+      "accent": "#279BBC"
+    },
+    "abstract-journey": {
+      "bg": "#15103D",
+      "surface": "#28215B",
+      "ink": "#FFFFFF",
+      "accent": "#EF5579"
+    },
+    "cinematic-editorial": {
+      "bg": "#ECE7DC",
+      "surface": "#F5F0E8",
+      "ink": "#242323",
+      "accent": "#8F3440"
+    }
+  },
+  "render": {
+    "seed": 421337,
+    "fps": 60,
+    "width": 1920,
+    "height": 1080,
+    "devicePixelRatio": 1,
+    "shutterSamples": 4,
+    "shutterAngleDegrees": 90,
+    "outputColor": "sRGB",
+    "loop": true
+  },
+  "studio": {
+    "provenance": "Tunable cinematic and studio-review defaults.",
+    "safeMarginPx": 120,
+    "columns": 12,
+    "gutterPx": 24,
+    "spacingStepPx": 8,
+    "typePx": {
+      "hero": [
+        88,
+        120
+      ],
+      "secondary": [
+        48,
+        64
+      ],
+      "body": [
+        28,
+        36
+      ],
+      "metadata": [
+        20,
+        24
+      ]
+    },
+    "cinematicCamera": {
+      "fovDegrees": [
+        28,
+        40
+      ],
+      "maxHeroOrbitDegrees": 8,
+      "parallaxDepthWorld": [
+        0.08,
+        0.35
+      ]
+    },
+    "texture": {
+      "fixedSeededGrainAlphaRange": [
+        0.005,
+        0.015
+      ],
+      "noTextureOverPrimaryText": true
+    },
+    "review": {
+      "targetScore": 90,
+      "requiredMinRating": {
+        "message": 4,
+        "composition": 4,
+        "motion": 4
+      },
+      "uninspected": "not evaluated"
+    }
+  }
+}

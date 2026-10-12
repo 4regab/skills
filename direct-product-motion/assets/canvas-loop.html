@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product motion loop starter</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101820;color:#edf4fa;font:14px system-ui}main{max-width:1120px;margin:32px auto;padding:0 20px}canvas{width:100%;height:auto;display:block;background:#f2f7fc;border-radius:16px}nav{display:flex;gap:14px;align-items:center;padding:16px 0}input{flex:1}button{padding:9px 14px;border:0;border-radius:7px;cursor:pointer}small{color:#a8bbc8}
+</style>
+<main><canvas id="film" width="1920" height="1080" aria-label="Placeholder product animation"></canvas><nav><button id="play">Play</button><input id="seek" aria-label="Seek frame" type="range" min="0" max="479" step="1" value="0"><output id="read">0 / 479</output><button id="audio">Export sound WAV</button></nav><small>Original template UI. Replace demo copy and data with the product's real action and result.</small></main>
+<script type="module">
+import {loopState,LOOP_VISUAL_CUES} from './motion-core.mjs';
+import {renderSoundtrack,toWav} from './audio-offline.mjs';
+const canvas=document.querySelector('#film'),ctx=canvas.getContext('2d'),seek=document.querySelector('#seek'),read=document.querySelector('#read');
+const W=1920,H=1080,FPS=60,N=480;
+function rounded(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=2;ctx.stroke();}}
+function text(s,x,y,size=32,color='#14273e',weight=500){ctx.fillStyle=color;ctx.font=`${weight} ${size}px Arial`;ctx.textAlign='left';ctx.fillText(s,x,y);}
+window.renderAt=(t)=>{
+ const s=loopState(t);ctx.resetTransform();ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';ctx.shadowBlur=0;ctx.shadowColor='transparent';ctx.clearRect(0,0,W,H);
+ ctx.fillStyle='#f2f7fc';ctx.fillRect(0,0,W,H);
+ const g=ctx.createRadialGradient(1450,180,10,1450,180,700);g.addColorStop(0,'rgba(8,120,233,.13)');g.addColorStop(1,'rgba(8,120,233,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ text('ONE CLEAR ACTION',152,165,22,'#3574a7',700);text('From request to ready.',150,246,64,'#14273e',600);
+ ctx.save();ctx.shadowColor='rgba(30,63,90,.12)';ctx.shadowBlur=44;ctx.shadowOffsetY=16;rounded(150,310,1620,615,30,'#ffffff');ctx.restore();
+ text('Your workspace',205,384,34);text('A focused feature demonstration',205,434,25,'#738694');
+ for(let i=0;i<3;i++){rounded(205,490+i*105,860,80,13,'#f4f7fa');text(['Select a request','Review the details','Confirm the result'][i],237,540+i*105,27,'#526775');}
+ ctx.save();ctx.translate(1435,490);ctx.scale(s.buttonScale,s.buttonScale);rounded(-235,-48,470,96,18,'#0878e9');text('Confirm request',-171,11,32,'#ffffff',600);ctx.restore();
+ ctx.save();ctx.globalAlpha=s.focusAlpha;ctx.strokeStyle='#73b9ff';ctx.lineWidth=4;ctx.beginPath();ctx.roundRect(1191,433,488,114,22);ctx.stroke();ctx.restore();
+ ctx.save();ctx.globalAlpha=s.panelAlpha;ctx.translate(1435,700+s.panelY);ctx.scale(s.panelScale,s.panelScale);rounded(-235,-114,470,265,20,'#edf7f4','#d7eae2');text('Ready to continue',-201,-57,31,'#1c6250',600);
+ for(let i=0;i<3;i++){ctx.save();ctx.globalAlpha*=s.rows[i];const y=-12+i*52;rounded(-201,y-18,22,22,6,'#29816a');text(['Details checked','Result saved','Next step available'][i],-159,y+1,23,'#376855');ctx.restore();}ctx.restore();
+ return s;
+};
+await document.fonts.ready;
+window.__ready=true;
+const params=new URLSearchParams(location.search),capture=params.has('t');
+window.renderAt(capture?Number(params.get('t')):0);
+let playing=false,handle=null,origin=0,offset=0;
+function stop(){playing=false;cancelAnimationFrame(handle);document.querySelector('#play').textContent='Play';}
+// Preview clock only. It selects absolute t and never advances scene state.
+function tick(stamp){if(!playing)return;const t=(stamp-origin)/1000+offset;window.renderAt(t);seek.value=Math.floor(((t%8)+8)%8*FPS);read.value=`${seek.value} / 479`;handle=requestAnimationFrame(tick);}
+document.querySelector('#play').onclick=()=>{if(capture)return;if(playing){offset=Number(seek.value)/FPS;stop();}else{playing=true;origin=performance.now();document.querySelector('#play').textContent='Pause';handle=requestAnimationFrame(tick);}};
+seek.oninput=()=>{stop();offset=Number(seek.value)/FPS;read.value=`${seek.value} / 479`;window.renderAt(offset);};
+document.querySelector('#audio').onclick=async()=>{const audio=await renderSoundtrack({cues:LOOP_VISUAL_CUES,fps:FPS,N,seed:421337});const blob=toWav(audio),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='motion-loop-sfx.wav';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+if(capture){document.querySelector('nav').hidden=true;}
+</script></html>

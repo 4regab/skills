@@ -1,6 +1,6 @@
-# Skills to Stop Making Clones
+# Agent Skills for Product Work
 
-Five agent skills that activate whenever you say **"I want to make an app that does X"** or start a new project idea.
+The five app-planning skills activate whenever you say **"I want to make an app that does X"** or start a new project idea.
 
 Instead of writing code right away, this pack checks whether the project is worth building, finds existing tools, and ensures you have a unique angle.
 
@@ -8,7 +8,7 @@ Instead of writing code right away, this pack checks whether the project is wort
 
 ## Install
 
-Run this command in your terminal to install the entire pack:
+Run this command in your terminal to install the skills:
 
 ```bash
 npx skills add 4regab/skills
@@ -25,7 +25,23 @@ npx skills add 4regab/skills
 | **Proof of Demand** | `proof-of-demand` | Finds people describing the problem in public, then demands named conversations or a paid signal before writing extra features. |
 
 
-## How It Works
+## Studio Motion Director
+
+Use `direct-product-motion` to plan and implement product videos, UI animations, and seamless loops. It includes a product interview, studio art direction, two timed blueprints, numeric motion tokens, deterministic render contracts, code starters, and a brief generator that creates shot lists plus complete coding and sound prompts.
+
+Install only this skill:
+
+```bash
+npx skills add 4regab/skills --skill direct-product-motion
+```
+
+Start with:
+
+> Use $direct-product-motion to define a visual direction and create a product video plan.
+
+Shared motion tests and brief generation are validated. Renderer exports still require visual and audio QA for each production.
+
+## How the App-Planning Pack Works
 
 The skills run in a clear pipeline:
 
@@ -38,7 +54,3 @@ By default, the agent pauses and redirects you if an existing product already do
 This pack is blunt on purpose. It pushes back **once**, and it does not sugar-coat it. It will name the apps that already do the job, and it may tell you the idea is a copy or that you did not look before asking. It goes after the idea, never at you.
 
 It only does this once. Say you still want to build it and the agent builds it, with no second lecture and no reminders later. Say up front that you are practising or making something for yourself, and it skips the pushback entirely.
-
-
-
-

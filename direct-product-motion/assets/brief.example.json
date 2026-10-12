@@ -1,0 +1,228 @@
+{
+  "product": "Focus Desk",
+  "audience": "Teams reviewing incoming requests",
+  "message": "Confirm a request and see a clear result.",
+  "cta": "Try Focus Desk.",
+  "engine": "Canvas",
+  "palette": "clear-workflow",
+  "tone": "Clear, calm, precise",
+  "fps": 60,
+  "N": 1440,
+  "width": 1920,
+  "height": 1080,
+  "seed": 421337,
+  "loop": true,
+  "bpm": 120,
+  "placeholderUi": true,
+  "features": [
+    {
+      "name": "Confirm request",
+      "action": "Choose a pending request and confirm it",
+      "result": "Show its approved state and checked details"
+    }
+  ],
+  "assets": [],
+  "constraints": [
+    "Example only; replace UI and copy for the actual product"
+  ],
+  "shots": [
+    {
+      "id": "problem",
+      "startFrame": 0,
+      "endFrame": 180,
+      "purpose": "Name the friction",
+      "copy": "Too many steps?",
+      "holdStartFrame": 90,
+      "holdEndFrame": 180,
+      "action": "Group three pending requests",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "None at opening",
+      "motion": "quintLike entrance 24f; stagger 4f",
+      "visualHits": [
+        {
+          "frame": 30,
+          "kind": "pop"
+        },
+        {
+          "frame": 34,
+          "kind": "pop"
+        },
+        {
+          "frame": 38,
+          "kind": "pop"
+        }
+      ],
+      "focalObject": "Three pending request fragments"
+    },
+    {
+      "id": "introduce",
+      "startFrame": 180,
+      "endFrame": 360,
+      "purpose": "Introduce the action",
+      "copy": "One clear action.",
+      "holdStartFrame": 264,
+      "holdEndFrame": 360,
+      "action": "Preserve one request and hide clutter",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "Aligned-bounds match cut",
+      "motion": "hero spring zeta .7, 2.8 Hz",
+      "visualHits": [
+        {
+          "frame": 180,
+          "kind": "pop"
+        },
+        {
+          "frame": 210,
+          "kind": "pop"
+        }
+      ],
+      "focalObject": "One central request panel"
+    },
+    {
+      "id": "action",
+      "startFrame": 360,
+      "endFrame": 600,
+      "purpose": "Demonstrate completion",
+      "copy": "Choose. Confirm. Done.",
+      "holdStartFrame": 468,
+      "holdEndFrame": 600,
+      "action": "Press Confirm and show an approved state",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "Targeted crop",
+      "motion": "tactile spring zeta .65, 4 Hz",
+      "visualHits": [
+        {
+          "frame": 396,
+          "kind": "click"
+        },
+        {
+          "frame": 420,
+          "kind": "click"
+        },
+        {
+          "frame": 468,
+          "kind": "click"
+        }
+      ],
+      "focalObject": "Confirm control and result state"
+    },
+    {
+      "id": "detail",
+      "startFrame": 600,
+      "endFrame": 840,
+      "purpose": "Explain the result",
+      "copy": "Everything in view.",
+      "holdStartFrame": 690,
+      "holdEndFrame": 840,
+      "action": "Reveal three checked details",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "Result region match cut",
+      "motion": "24f detail reveal; stagger 4f",
+      "visualHits": [
+        {
+          "frame": 630,
+          "kind": "pop"
+        },
+        {
+          "frame": 634,
+          "kind": "pop"
+        },
+        {
+          "frame": 638,
+          "kind": "pop"
+        }
+      ],
+      "focalObject": "Three checked request details"
+    },
+    {
+      "id": "benefit",
+      "startFrame": 840,
+      "endFrame": 1080,
+      "purpose": "Show the benefit",
+      "copy": "Ready for the next step.",
+      "holdStartFrame": 900,
+      "holdEndFrame": 1080,
+      "action": "Retain one clear completed request",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "Collapse details into result",
+      "motion": "48f camera ease",
+      "visualHits": [
+        {
+          "frame": 888,
+          "kind": "pop"
+        }
+      ],
+      "focalObject": "One completed request"
+    },
+    {
+      "id": "close",
+      "startFrame": 1080,
+      "endFrame": 1440,
+      "purpose": "Invite the viewer",
+      "copy": "Try Focus Desk.",
+      "holdStartFrame": 1116,
+      "holdEndFrame": 1320,
+      "action": "Show CTA, then restore the blank opening state",
+      "camera": "Orthographic, view height 6.5; zoom range 1 to 1.08; stable while reading",
+      "lighting": "Key warm white 2.5, fill cool white .7, rim white 1.2",
+      "transition": "Return to exact opening state by f1380",
+      "motion": "36f CTA entrance; 60f return",
+      "visualHits": [
+        {
+          "frame": 1116,
+          "kind": "click"
+        },
+        {
+          "frame": 1320,
+          "kind": "click"
+        }
+      ],
+      "focalObject": "Product CTA and restored frame"
+    }
+  ],
+  "visualDirection": "hybrid",
+  "concept": "A fragmented set of requests becomes one clear, approved next step.",
+  "motif": "A frame that gathers related request details and resolves into the approved result.",
+  "motifLedger": [
+    {
+      "shot": "problem",
+      "state": "fragmented",
+      "meaning": "Name the friction"
+    },
+    {
+      "shot": "introduce",
+      "state": "focused",
+      "meaning": "Introduce the action"
+    },
+    {
+      "shot": "action",
+      "state": "activated",
+      "meaning": "Demonstrate completion"
+    },
+    {
+      "shot": "detail",
+      "state": "explained",
+      "meaning": "Explain the result"
+    },
+    {
+      "shot": "benefit",
+      "state": "resolved",
+      "meaning": "Show the benefit"
+    },
+    {
+      "shot": "close",
+      "state": "returned",
+      "meaning": "Invite the viewer"
+    }
+  ],
+  "audio": {
+    "sfx": true,
+    "music": false,
+    "voice": false
+  }
+}
