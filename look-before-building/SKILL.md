@@ -1,13 +1,13 @@
 ---
 name: look-before-building
-description: Check a new app, SaaS, extension, bot, or AI wrapper idea against what already exists before writing any code. Flags over-copied categories (todo, habit, gym, notes, AI chatbot, PDF summarizer, job board, directory, scheduler, Uber-for-X), searches live for existing apps, built-in features, and GitHub repos, then gives one verdict - USE, EXTEND, VALIDATE, or BUILD. Use when the user says "I want to make an app that does X", "I have an idea", side project, MVP, "clone of X", "like X but", or jumps to a stack before naming a user. Hands off to why-this-is-different. Not for bugfixes or work on a product the user already owns.
+description: Check a new app, SaaS, extension, bot, or AI wrapper idea against what already exists before writing any code. Flags over-copied categories (todo, habit, gym, notes, AI chatbot, PDF summarizer, job board, directory, scheduler, Uber-for-X), searches live for existing apps, built-in features, and GitHub repos, then gives one verdict - USE, EXTEND, VALIDATE, or BUILD. Use when the user says "I want to make an app that does X", "I have an idea", side project, MVP, "clone of X", "like X but", or jumps to a stack before naming a user. Not for bugfixes or work on a product the user already owns.
 ---
 
 # Look Before Building
 
 Find the shortest path to what the user actually wants. Evidence comes before app code. This skill does not refuse to build. It pushes back once, hard, then helps.
 
-Pipeline: **heat check → live search → verdict → `why-this-is-different`** (only if they still build).
+Pipeline: **heat check → live search → verdict**.
 
 ## When to skip
 
@@ -68,8 +68,8 @@ Pick one. Present them in this order. These names are fixed.
 |---|---|---|
 | **USE** | A shipped product meets the real need | Link the best fit and how to start |
 | **EXTEND** | A healthy repo or product covers most of it | Name the missing piece and the PR / plugin / fork path. User reviews the repo first |
-| **VALIDATE** | A gap might exist, but pain or demand is thin | Smallest test, a success number, a stop condition. Then `why-this-is-different` |
-| **BUILD** | A real unmet constraint exists and reuse falls short | Scope only the job that proves it. Then `why-this-is-different` |
+| **VALIDATE** | A gap might exist, but pain or demand is thin | Smallest test, a success number, a stop condition |
+| **BUILD** | A real unmet constraint exists and reuse falls short | Scope only the job that proves it |
 
 "No close match" is a note, not a fifth verdict. Still pick VALIDATE or BUILD.
 
