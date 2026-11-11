@@ -1,8 +1,8 @@
 # Agent Skills for Product Work
 
-The five app-planning skills activate whenever you say **"I want to make an app that does X"** or start a new project idea.
+The two app-planning skills activate whenever you say **"I want to make an app that does X"** or start a new project idea.
 
-Instead of writing code right away, this pack checks whether the project is worth building, finds existing tools, and ensures you have a unique angle.
+Instead of writing code right away, this pack checks whether the project is worth building, finds existing tools, and makes sure you have a real reason to build it.
 
 ---
 
@@ -18,17 +18,15 @@ npx skills add 4regab/skills
 
 | Skill | Folder | What It Does |
 | --- | --- | --- |
-| **Look Before Building** | `look-before-building` | Orchestrator. Coordinates the pipeline, compares options, and makes the go/no-go call. |
-| **Overused App Ideas** | `overused-app-ideas` | Quick heat-check on over-copied startup and side-project categories. |
-| **Find Existing Apps** | `find-existing-apps` | Live search across existing apps, GitHub repositories, and built-in tools. |
-| **Why This Is Different** | `why-this-is-different` | Identifies one clear, falsifiable reason why this product is not just a clone. |
-| **Proof of Demand** | `proof-of-demand` | Finds people describing the problem in public, then demands named conversations or a paid signal before writing extra features. |
+| **Look Before Building** | `look-before-building` | Flags over-copied app ideas, searches live for existing apps, built-in features, and GitHub repos, then gives one verdict: USE, EXTEND, VALIDATE, or BUILD. |
+| **Why This Is Different** | `why-this-is-different` | Makes you name one clear reason the app is not a clone, then asks for named people or a paid signal before more features. |
 
-## How the App-Planning Pack Works
+## How It Works
 
-The skills run in a clear pipeline:
+**Heat check** → **Live search** → **USE / EXTEND / VALIDATE / BUILD** → **Wedge sentence** → **Proof of demand**
 
-**Graveyard** → **Scan** → **Use / Extend / Validate / Build** → **Users**
+By default, the agent pauses and points you to an existing product if one already does the job well. It pushes back once, then builds if you still want it. Learning and personal projects skip the demand check.
 
-By default, the agent pauses and redirects you if an existing product already does the job well. You can always override this, and learning or personal tools skip the validation bar.
+## Safety
 
+The skills only suggest GitHub repos. They never clone, install, or run code from them. Not every repo is safe, so review any suggested repo yourself before installing it.

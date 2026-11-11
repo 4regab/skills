@@ -21,7 +21,7 @@ Web
 
 - `{job} app`
 - `{job} software`
-- `best {job} tools 2025` and `2026`
+- `best {job} tools {this year}` and `{last year}`
 - `{alias} alternative`
 - `{job} open source`
 - `{job} iPhone setting` / `built in` / `Chrome extension already`
@@ -57,6 +57,19 @@ Treat as living if any of these hold
 - Active changelog, Discord, or changelog tweet
 
 Treat as dead if the site 404s, last commit is years old with no fork activity, or every review says "abandoned." Dead products still count — someone already tried this shape.
+
+## 3b. Repo warning signs
+
+Read these from the repo page only. Never clone, install, or run the code to check.
+
+- Account or repo created days ago, with a big star count
+- Name one letter off a famous project, or a copied README
+- Install steps that pipe a script into a shell (`curl ... | sh`, `iwr ... | iex`)
+- Release binaries or zips with no matching source
+- Obfuscated or minified source in a project that should be plain code
+- No license, or issues full of "malware" / "stole my keys" reports
+
+Report any sign you see. Always tell the user to review the repo themselves before installing.
 
 ## 4. How many is enough
 

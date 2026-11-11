@@ -56,4 +56,4 @@ Keep the idea only if every box is true
 - Builder has been in that scene long enough to be believed
 - They will talk to 5 people before a second feature
 
-Otherwise it is a grave with a fresh coat of paint.
+Otherwise it is a grave with a fresh coat of paint. The full wedge and demand checks live in `why-this-is-different`.
