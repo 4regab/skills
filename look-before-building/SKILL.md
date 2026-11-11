@@ -38,6 +38,7 @@ Use your real web search and page-fetch tools. Memory is a lead, not evidence. F
 
 - Search the **job** and 3-6 synonyms, not the user's brand name.
 - Cover web, built-in OS/browser/spreadsheet features, GitHub, Product Hunt / AlternativeTo, app stores, and Reddit.
+- For GitHub, follow section 2b of the playbook: 2-3 keywords, `stars:>20 archived:false`, JSON results, and curated lists for open-source copies of a named app.
 - A settings toggle that already does the job beats a new app.
 - Start with the 3-5 closest hits. Stop when the same names keep coming back.
 - Listicles are leads. Open the real product page or repo for finalists.
