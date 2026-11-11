@@ -9,9 +9,9 @@ Find the shortest path to what the user actually wants. Evidence comes before ap
 
 Pipeline: **heat check → live search → verdict**.
 
-## When to skip
+## When to skip parts
 
-- The user said it is practice, learning, or a personal tool. Name 2-3 things it copies, add a note in the README that it is a copy, and help them build it. No market talk.
+- The user said it is practice, learning, or a personal tool. Still run the live search (step 3) and show the closest apps and repos, since a free one may already do the job. Skip the heat check, the hard round, and market talk. If they still want to build it, add a note in the README that it is a copy and help them.
 - The user already saw an earlier brief in this conversation and chose. Do not reopen it unless the requirements changed.
 
 "Just build it" said before the first reply does **not** skip this. They have not seen anything yet.

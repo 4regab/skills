@@ -24,7 +24,7 @@ npx skills add 4regab/skills
 
 **Heat check** → **Live search** → **USE / EXTEND / VALIDATE / BUILD**
 
-By default, the agent pauses and points you to an existing product if one already does the job well. It pushes back once, then builds if you still want it. Learning and personal projects skip the market check.
+By default, the agent pauses and points you to an existing product if one already does the job well. It pushes back once, then builds if you still want it. Learning and personal projects still get the search for existing apps and repos, but skip the pushback and market check.
 
 ## Safety
 
